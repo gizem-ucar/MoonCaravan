@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Moon Caravan
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <a href="#" class="logo">
+                Moon
+            </a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >Rental</a></li>
+                <li><a href="#" >Design</a></li>
+                <li><a href="#" >Camp Sites</a></li>
+                <li><a href="#" >Shop</a></li>
+                <li><a href="#" >Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="bg.jpg" id="bg">
+            <img src="moon.png" id="moon">
+            <img src="mountain.png" id="mountain">
+            <img src="road.png" id="road">
+            <h2 id="text">Moon Caravan</h2>
+        </section>
+        
+        <div class="sec">
+            <!-- <section id="rental">  -->
+                <div class="rental">
+                    <div class="container">
+                        <div class="rental-tittle">
+                            <h2>RENTAL</h2>
+                        </div>  
+                    <div class="rental-content">
+                            <div class="rental-img">
+                                <img class="imgalt1" src="tommy-lisbin-xr-y6Ruw7K8-unsplash.jpg" alt="">
+                            </div>
+                            <div class="rental-text">
+                                <h4>Karavan kiralama</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, id sapiente adipisci ullam distinctio fuga nam sunt, aspernatur debitis itaque blanditiis molestiae voluptatibus omnis! Reiciendis hic similique labore dicta dignissimos. 
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi sunt distinctio provident libero, voluptates magnam optio ipsum, minus eum voluptatibus amet at obcaecati omnis voluptatum? Earum, itaque provident! Earum, doloremque.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque fugit perferendis nam eius, suscipit corrupti temporibus officiis facilis. Odio, veritatis? Obcaecati veniam debitis architecto consequatur blanditiis quod excepturi, ea commodi.
+                                    <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatum voluptate libero quod tempora sunt nam quos fugit ratione. Aliquid soluta nesciunt ipsum qui asperiores aspernatur eos! Quisquam, quasi dolorum.
+                                </p>
+                            </div>
+                        </div>
+                            
+            <!-- </section>                                       -->
+                          
+                
+            <div class="rent-content">
+                    <div class="rent-img">
+                                <img class="imgalt2" src="david-billings-oN_bW9C1YHg-unsplash.jpg">
+                    </div>
+                    <div class="rent-text">
+                        <h4>Karavan'ını kiraya vermek</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, quo pariatur possimus delectus cupiditate temporibus aspernatur esse eum accusantium dolorem quidem eligendi, nulla maiores nisi ex inventore. Quam, eius id!
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur mollitia aspernatur unde molestias a, maxime enim vel saepe quod quaerat facere quas. Temporibus fugit vel eligendi voluptas tempore ullam ipsa!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste atque eum alias in quisquam, vero necessitatibus at veritatis unde exercitationem. Voluptate expedita non velit consectetur sed dolore necessitatibus culpa adipisci?
+                            </p>
+                    </div>
+            </div>
+            
+            <h2>Karavan yapımı</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sed rerum temporibus in dolores quisquam asperiores porro aliquam quo, soluta sapiente consequuntur animi assumenda libero maiores quod culpa commodi sequi.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, tempora? Architecto quam eius cupiditate porro ex commodi magnam perferendis repellendus possimus debitis minima, accusantium sed maiores. Dolore dignissimos itaque sequi?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur animi aperiam unde neque alias! Repellendus voluptatem cupiditate officia voluptas ullam praesentium nemo fugit quia omnis quod, perferendis dolorum officiis numquam.
+            </p>
+        </div>
+    </div>
+   </div>
+        <script>
+            let bg = document.getElementById('bg');
+            let moon = document.getElementById('moon');
+            let mountain = document.getElementById('mountain');
+            let road = document.getElementById('road');
+            let text = document.getElementById('text');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll' , function(){
+                var value = window.scrollY;
+
+                bg.style.top = value * 0.5 + 'px';
+                moon.style.top = value * 1.5 + 'px';
+                mountain.style.top = value * 0.15 + 'px';
+                road.style.top = value * 0.15 + 'px';
+                text.style.top = value * 1 + 'px';
+                header.style.top = value * 0.5 + 'px';
+
+            })
+        </script>
+    </body>
+</html>
